@@ -20,7 +20,7 @@ export default function Hero() {
                         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                         </div>
                         <input type="search" id="search" className="block w-full p-4 ps-10 text-sm text-gray-900 rounded-2xl border border-gray-300  bg-gray-50 focus:ring-purple-500 focus:border-purple-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" placeholder="Enter tracking number" />
-                        <button type="submit" className=" absolute end-2.5 bottom-2.5 bg-btn-base-light text-white  dark:bg-btn-base-dark focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-6 py-2  dark:focus:ring-purple-800">Track</button>
+                        <button name="track" id='track' type="submit" className=" absolute end-2.5 bottom-2.5 bg-btn-base-light text-white  dark:bg-btn-base-dark focus:ring-4 focus:outline-none focus:ring-purple-300 hover:bg-DarkprimaryColor font-medium rounded-lg text-sm px-6 py-2  dark:focus:ring-purple-800">Track</button>
                     </div>
                 </form>
 

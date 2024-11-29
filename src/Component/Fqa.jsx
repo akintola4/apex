@@ -15,7 +15,7 @@ function Fqa({ fqa }) {
         <h4 className="text-md font-light dark:text-gray-50 text-gray-950">
           {fqa.title}
         </h4>
-        <button>
+        <button name="FQA toggle" id='FQA toggle'>
           <FaPlus />
         </button>
       </div>

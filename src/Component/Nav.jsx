@@ -83,8 +83,8 @@ export default function Nav() {
             <nav className="flex items-center p-3 justify-between" aria-label="Global">
                 <Link to="/" className="flex flex-row lg:items-center lg:justify-center gap-2 w-4/12  lg:w-2/12">
 
-                    <img src="/img/logo-light.svg" className="w-8/12 block dark:hidden md:w-6/12" alt="" />
-                    <img src="/img/logo-light.svg" className="w-6/12 hidden dark:block md:w-6/12" alt="" />
+                    <img src="/img/logo-light.svg" className="w-8/12 block dark:hidden md:w-6/12" alt="comapny logo" />
+                    <img src="/img/logo-light.svg" className="w-6/12 hidden dark:block md:w-6/12" alt="comapny logo" />
                 </Link>
                 <div className=" flex-row items-center hidden lg:gap-10 xl:gap-20   rounded-lg py-2 px-3 justify-center  lg:flex ">
                     <div className="relative text-md  w-fit block hover:text-primaryColor after:block after:content-[''] after:absolute after:h-[2px] after:bg-primaryColor after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
@@ -153,13 +153,13 @@ export default function Nav() {
 
                 <div className="nav-3  xl:w-2/12 flex items-end justify-end">
                     <div className=" flex-row hidden gap-3 lg:flex items-center ">
-                        <button className='px-4 py-2 bg-primaryColor hover:bg-gray-100 border border-transparent hover:border-primaryColor hover:text-btnbg-primaryColor dark:bg-btn-base-dark dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-btn-base-dark    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get started</button>
+                        <button  name="get started" id='get started' className='px-4 py-2 bg-primaryColor hover:bg-DarkprimaryColor border border-transparent hover:border-primaryColor hover:text-btnbg-primaryColor dark:bg-btn-base-dark dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-btn-base-dark    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get started</button>
 
                        
                         <DarkSwitcher />
                     </div>
                     <button
-                        className="flex p-2 rounded-md text-primaryColor dark:text-white outline-none cursor-pointer mobile-menu-button lg:hidden hover:bg-none hover:text-primaryColor" onClick={toggleMenu}>
+                        className="flex p-2 rounded-md text-white dark:text-white outline-none cursor-pointer mobile-menu-button lg:hidden hover:bg-none hover:text-white" onClick={toggleMenu}>
                         <RxHamburgerMenu className="text-2xl" /></button>
                         
                 </div>
@@ -196,9 +196,9 @@ export default function Nav() {
                         </Link></div>
                         <div className="px-5 py-2 transition duration-300 dark:text-white">
                         <div className=" flex-row  gap-4 flex items-center ">
-                    <button className='px-4 py-2 bg-gray-100 hover:border-btnbg-primaryColor dark:bg-gray-950 dark:text-gray-50 dark:hover:text-gray-100  hover:bg-primaryColor hover:text-gray-50  transition ease-in-out  delay-150 duration-300   rounded-lg'>Login</button>
+
                        
-                        <button className='px-4 py-2 bg-gray-950 hover:bg-gray-100 hover:text-btnbg-primaryColor dark:bg-gray-100 dark:text-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get started</button>
+                        <button  name="get started" id='get started' className='px-4 py-2 bg-primaryColor hover:bg-DarkprimaryColor border border-transparent hover:border-primaryColor hover:text-btnbg-primaryColor dark:bg-btn-base-dark dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-btn-base-dark    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get started</button>
 
                        
                         <DarkSwitcher />

@@ -128,7 +128,7 @@ export default function Land() {
                             destination safely and on time. </p>
                     </div>
 
-                    <button className='px-3 py-2 w-8/12 md:w-3/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg' data-aos="fade-left">See more</button>
+                    <button name="learn" id='learn' className='px-3 py-2 w-8/12 md:w-3/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg' data-aos="fade-left">See more</button>
 
 
                 </div>
@@ -171,7 +171,7 @@ export default function Land() {
                         </div>
                         <label htmlFor="handling" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Do you need special handling?</label>
                     </div>
-                    <button type="submit" className='px-3 py-2 w-full bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get Quotation</button>
+                    <button name="quote form"  id='quote form' type="submit" className='px-3 py-2 w-full bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get Quotation</button>
                 </form>
 
             </section>
@@ -211,7 +211,7 @@ export default function Land() {
             <section id="services" name="services" className=" flex flex-col lg:flex-row items-start py-10 gap-10 px-5    xl:px-32 bg-[#7F7CAF] dark:bg-btn-base-dark" data-aos="fade-right" >
                 <div className="flex flex-col text-white justify-evenly">
                     <div className="flex flex-col gap-4">
-                        <p className="  text-gray-50 dark:text-gray-50 w-6/12 md:w-3/12 lg:w-3/12 text-center text-sm border-gray-50 dark:border-gray-5text-gray-50 border p-2">Our Services</p>
+                        <p className="  text-gray-50 dark:text-gray-50 w-6/12 md:w-3/12 lg:w-6/12 text-center text-sm border-gray-50 dark:border-gray-5text-gray-50 border p-2">Our Services</p>
                         <h4 className="  md:text-3xl font-bold dark:text-white  text-2xl">Why choose us</h4>
                         <p className="  text-sm md:w-8/12 lg:w-11/12 xl:w-6/12  dark:text-gray-300">Our team is here to make delivery
                             simple, convenient, and reliable, no
@@ -236,7 +236,7 @@ export default function Land() {
                     <div className="flex flex-col xl:w-8/12 justify-between gap-10" data-aos="fade-right">
                         {card3}
                     </div>
-                    <button className='px-3 py-2 md:w-3/12 lg:w-8/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Join team</button>
+                    <button  name="join" id='Join' className='px-3 py-2 md:w-3/12 lg:w-8/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Join team</button>
 
 
                 </div>
@@ -244,7 +244,7 @@ export default function Land() {
                 <img src="img/hero-2.svg" className="xl:w-8/12 scale-100 lg:scale-90 my-10 dark:invert-0" alt="" />
 
             </section>
-            <section id="reviews" name="reviews" className=" flex flex-col items-start py-10 gap-10 px-5    xl:px-32 bg-[#7F7CAF] dark:bg-btn-base-dark" data-aos="fade-left" >
+            <section id="reviews" name="reviews" className=" flex flex-col items-start py-10 gap-10 px-5    xl:px-32 bg-[#7F7CAF] dark:bg-btn-base-dark"  >
                 <div className="flex flex-col text-white justify-evenly">
                     <div className="flex flex-col gap-4">
                         <p className="  text-gray-50 dark:text-gray-50 w-6/12 text-center text-sm border-gray-50 dark:border-gray-5text-gray-50 border p-2">Testimonials</p>

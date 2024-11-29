@@ -27,7 +27,7 @@ export default function Sub() {
                         the road?</h4>
                         {/* <p className="text-sm md:text-md text-center ">The ultimate guide and latest updates on ooido. Join 100,000+ others on the journey.</p> */}
                     </div>
-                    <button className='px-4 py-2 bg-primaryColor border hover:bg-gray-100 border-transparent hover:border-primaryColor hover:text-primaryColor dark:bg-btn-base-dark dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-btn-base-dark    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get started</button>
+                    <button className='px-4 py-2 bg-primaryColor hover:bg-DarkprimaryColor border hover:text-white border-transparent hover:border-primaryColor  dark:bg-btn-base-dark dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-btn-base-dark    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get started</button>
 
                        
                     {/* <div className="bg-gray-100 rounded-lg flex xl:w-4/12 justify-between flex-row gap-4 md:gap-10 text-black p-2 px-4">
