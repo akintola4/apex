@@ -26,8 +26,15 @@ import Footer from "./Footer";
 import Sub from "./Sub";
 import MovingDiv from "./MovingDiv";
 
-export default function Land() {
 
+//for aos
+import { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+export default function Land() {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     const card2 = workdata.map(info => (
         <Card2
             key={info.id}
@@ -72,7 +79,7 @@ export default function Land() {
             <Nav />
             <Hero />
 
-            <section className="flex flex-row  justify-between gap-5 md:gap-10 xl:gap-48 px-5 md:px-10 xl:mx-auto">
+            <section className="flex flex-row  justify-between gap-5 md:gap-10 xl:gap-48 px-5 md:px-10 xl:mx-auto" data-aos="fade-right">
                 <div className="flex flex-col gap-4">
                     <h4 className=" text-gray-950 md:text-3xl font-semibold dark:text-white  text-2xl"> 10,000+</h4>
                     <p className=" text-gray-400 text-sm  dark:text-gray-300"> Successful deliveries completed</p>
@@ -102,12 +109,12 @@ export default function Land() {
                 <img src="img/hero-3.svg" className="xl:w-8/12 scale-100 md:scale-125 lg:scale-90 my-10 dark:invert-0" alt="" />
 
                 <div className="flex flex-col  xl:w-6/12 gap-6 md:gap-12 md:my-10">
-                    <div className="flex flex-col gap-4 md:gap-6">
+                    <div className="flex flex-col gap-4 md:gap-6" data-aos="fade-left">
                         <p className="  text-primaryColor dark:text-DarkprimaryColor w-6/12 md:w-2/12 lg:w-6/12 text-center text-sm border-primaryColor dark:border-DarkprimaryColor border p-2">About Us</p>
                         <h4 className=" text-gray-950 md:text-3xl font-bold dark:text-white  text-2xl">Apex Logistics </h4>
 
                     </div>
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-6" data-aos="fade-left">
                         <p className=" text-gray-950 text-md  dark:text-gray-300 ">At Apex Logistics, we are dedicated to redefining logistics
                             solutions with efficiency, reliability, and innovation.
                             Specializing in end-to-end supply chain management, we
@@ -121,14 +128,14 @@ export default function Land() {
                             destination safely and on time. </p>
                     </div>
 
-                    <button className='px-3 py-2 w-8/12 md:w-3/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>See more</button>
+                    <button className='px-3 py-2 w-8/12 md:w-3/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg' data-aos="fade-left">See more</button>
 
 
                 </div>
 
 
             </section>
-            <section id="quote" name="quote" className="xl:mx-32 lg:mx-20 p-5 md:p-10 bg-[#E5E4F2] dark:bg-btn-base-dark rounded-xl flex flex-col gap-10 items-center">
+            <section id="quote" name="quote" className="xl:mx-32 lg:mx-20 p-5 md:p-10 bg-[#E5E4F2] dark:bg-btn-base-dark rounded-xl flex flex-col gap-10 items-center" data-aos="fade-right">
                 <div className="flex flex-col text-center gap-2">
                     {/* <p className="  mx-auto text-primaryColor dark:text-DarkprimaryColor text-sm border-primaryColor  dark:border-DarkprimaryColor border p-2">Core Partners</p> */}
                     <h4 className=" text-gray-950 md:text-3xl font-semibold dark:text-white  text-2xl">Delivery Cost Estimator</h4>
@@ -169,8 +176,8 @@ export default function Land() {
 
             </section>
 
-            <section id="brand" name="brand" className="flex flex-col gap-6">
-                <div className="flex flex-col text-center gap-2">
+            <section id="brand" name="brand" className="flex flex-col gap-6" >
+                <div className="flex flex-col text-center gap-2" data-aos="fade-right">
                     <p className="  mx-auto text-primaryColor dark:text-DarkprimaryColor text-sm border-primaryColor  dark:border-DarkprimaryColor border p-2">Core Partners</p>
                     <h4 className=" text-gray-950 md:text-3xl font-bold dark:text-white  text-2xl">Our partners</h4>
                     {/* <p className=" text-gray-400 mx-auto dark:text-gray-300">Our values are the foundation of everything we do</p> */}
@@ -201,7 +208,7 @@ export default function Land() {
                     </section>
                 </MovingDiv>
             </section>
-            <section id="services" name="services" className=" flex flex-col lg:flex-row items-start py-10 gap-10 px-5    xl:px-32 bg-[#7F7CAF] dark:bg-btn-base-dark" data-aos="zoom-in" >
+            <section id="services" name="services" className=" flex flex-col lg:flex-row items-start py-10 gap-10 px-5    xl:px-32 bg-[#7F7CAF] dark:bg-btn-base-dark" data-aos="fade-right" >
                 <div className="flex flex-col text-white justify-evenly">
                     <div className="flex flex-col gap-4">
                         <p className="  text-gray-50 dark:text-gray-50 w-6/12 md:w-3/12 lg:w-3/12 text-center text-sm border-gray-50 dark:border-gray-5text-gray-50 border p-2">Our Services</p>
@@ -237,7 +244,7 @@ export default function Land() {
                 <img src="img/hero-2.svg" className="xl:w-8/12 scale-100 lg:scale-90 my-10 dark:invert-0" alt="" />
 
             </section>
-            <section id="reviews" name="reviews" className=" flex flex-col items-start py-10 gap-10 px-5    xl:px-32 bg-[#7F7CAF] dark:bg-btn-base-dark" data-aos="zoom-in" >
+            <section id="reviews" name="reviews" className=" flex flex-col items-start py-10 gap-10 px-5    xl:px-32 bg-[#7F7CAF] dark:bg-btn-base-dark" data-aos="fade-left" >
                 <div className="flex flex-col text-white justify-evenly">
                     <div className="flex flex-col gap-4">
                         <p className="  text-gray-50 dark:text-gray-50 w-6/12 text-center text-sm border-gray-50 dark:border-gray-5text-gray-50 border p-2">Testimonials</p>
@@ -254,7 +261,7 @@ export default function Land() {
                 </div>
 
             </section>
-            <section id="faqs" name="faqs" className=" flex flex-col h-full  lg:flex-row items-start py-10 lg:py-20 gap-10 px-5    xl:px-32 " data-aos="zoom-in" >
+            <section id="faqs" name="faqs" className=" flex flex-col h-full  lg:flex-row items-start py-10 lg:py-20 gap-10 px-5    xl:px-32 " data-aos="fade-right" >
                 <div className="flex flex-col justify-evenly">
                     <div className="flex flex-col gap-6 xl:gap-4">
                         <p className="  text-primaryColor dark:text-gray-50 w-6/12 md:w-3/12 lg:w-2`/12 text-center text-sm border-primaryColor dark:border-DarkprimaryColor border p-2">FAQs</p>
