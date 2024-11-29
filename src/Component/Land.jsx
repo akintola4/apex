@@ -2,14 +2,14 @@
 import Nav from "./Nav";
 import Hero from "./Hero";
 //for the core component card type
-import Card2 from "./Card2";
+import ValueCard from "./ValueCard.jsx";
 import workdata from "./work";
 //for the join us card type
-import Card3 from "./Card3";
+import RiderCard from "./RiderCard.jsx";
 import riderData from "./rider";
 
 //for the services us card type
-import Card4 from "./card4";
+import ServiceCard from "./serviceCard.jsx";
 import servicesData from "./services";
 
 
@@ -31,24 +31,25 @@ import MovingDiv from "./MovingDiv";
 import { useEffect } from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+
 export default function Land() {
     useEffect(() => {
         AOS.init();
     }, [])
-    const card2 = workdata.map(info => (
-        <Card2
+    const values = workdata.map(info => (
+        <ValueCard
             key={info.id}
             info={info}
         />
     ));
-    const card3 = riderData.map(rider => (
-        <Card3
+    const rider = riderData.map(rider => (
+        <RiderCard
             key={rider.id}
             rider={rider}
         />
     ));
-    const card4 = servicesData.map(service => (
-        <Card4
+    const service = servicesData.map(service => (
+        <ServiceCard
             key={service.id}
             service={service}
         />
@@ -102,7 +103,7 @@ export default function Land() {
                     <p className=" text-gray-400 mx-auto dark:text-gray-300">Our values are the foundation of everything we do</p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 items-center justify-evenly gap-5 md:gap-10 xl:gap-20 xl:w-10/12 ">
-                    {card2}
+                    {values}
                 </div>
             </section>
             <section id="about" name="about" className=" flex flex-col lg:flex-row py-10 xl:gap-32 px-5 justify-between items-center  xl:mx-32" data-aos="zoom-in" >
@@ -221,7 +222,7 @@ export default function Land() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 xl:w-7/12">
-                    {card4}
+                    {service}
                 </div>
 
             </section>
@@ -234,7 +235,7 @@ export default function Land() {
                         <p className=" text-gray-400 text-sm  dark:text-gray-300">Here are four steps to becoming a rider with Apex</p>
                     </div>
                     <div className="flex flex-col xl:w-8/12 justify-between gap-10" data-aos="fade-right">
-                        {card3}
+                        {rider}
                     </div>
                     <button  name="join" id='Join' className='px-3 py-2 md:w-3/12 lg:w-8/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Join team</button>
 

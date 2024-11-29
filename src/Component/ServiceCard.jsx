@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Card4({ service }) {
+function ServiceCard({ service }) {
   return (
     <div className="flex flex-col gap-4 bg-gray-50 dark:bg-gray-800 dark:border-transparent  border hover:shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] p-6 dark:hover:shadow-[rgba(247,240,_252,_0.1)_0px_0px_10px] rounded-lg">
 
@@ -18,7 +18,7 @@ function Card4({ service }) {
   );
 }
 
-Card4.propTypes = {
+ServiceCard.propTypes = {
   service: PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
@@ -26,11 +26,4 @@ Card4.propTypes = {
   }).isRequired
 };
 
-export default Card4;
-//is used PropTypes to stop the eslint errors
-// Card2.propTypes ensures that the 'service' prop is an object with the required 
-// 'img', 'title', and 'description' properties. This helps catch potential 
-// errors early in development, making the code more reliable and maintainable.
-// The 'isRequired' validator ensures that the 'img', 'title', and 'description' 
-// properties within the 'service' prop are mandatory. This guarantees that the 
-// component receives all the necessary data to render correctly.
+export default ServiceCard;

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Card2({ info }) {
+function ValueCard({ info }) {
   return (
     <div 
       className="flex flex-col gap-4 h-full border hover:shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] p-10 dark:hover:shadow-[rgba(247,240,_252,_0.1)_0px_0px_10px] rounded-lg" 
@@ -21,7 +21,7 @@ function Card2({ info }) {
   );
 }
 
-Card2.propTypes = {
+ValueCard.propTypes = {
   info: PropTypes.shape({
     img: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
@@ -29,9 +29,9 @@ Card2.propTypes = {
   }).isRequired
 };
 
-export default Card2;
+export default ValueCard;
 //is used PropTypes to stop the eslint errors
-// Card2.propTypes ensures that the 'info' prop is an object with the required 
+// ValueCard.propTypes ensures that the 'info' prop is an object with the required 
 // 'img', 'title', and 'description' properties. This helps catch potential 
 // errors early in development, making the code more reliable and maintainable.
 // The 'isRequired' validator ensures that the 'img', 'title', and 'description' 

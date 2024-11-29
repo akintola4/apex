@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Card3({ rider }) {
+function RiderCard({ rider }) {
   return (
     <div className="flex flex-row gap-6">
       <div className='flex flex-col '>
@@ -18,7 +18,7 @@ function Card3({ rider }) {
       );
 }
 
-      Card3.propTypes = {
+      RiderCard.propTypes = {
         rider: PropTypes.shape({
           id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
@@ -26,9 +26,9 @@ function Card3({ rider }) {
   }).isRequired
 };
 
-      export default Card3;
+      export default RiderCard;
 //is used PropTypes to stop the eslint errors
-// Card3.propTypes ensures that the 'rider' prop is an object with the required 
+// RiderCard.propTypes ensures that the 'rider' prop is an object with the required 
 // 'img', 'title', and 'description' properties. This helps catch potential 
 // errors early in development, making the code more reliable and maintainable.
 // The 'isRequired' validator ensures that the 'img', 'title', and 'description' 
