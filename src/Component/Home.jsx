@@ -80,7 +80,7 @@ export default function Home() {
             <Nav />
             <Hero />
 
-            <section className="flex flex-row  justify-between gap-5 md:gap-10 xl:gap-48 px-5 md:px-10 xl:mx-auto" data-aos="fade-right">
+            <section className="flex flex-col md:flex-row  items-center justify-between gap-5 md:gap-10 xl:gap-48 px-5 md:px-10 xl:mx-auto" data-aos="fade-right">
                 <div className="flex flex-col gap-4">
                     <h4 className=" text-gray-950 md:text-3xl font-semibold dark:text-white  text-2xl"> 10,000+</h4>
                     <p className=" text-gray-400 text-sm  dark:text-gray-300"> Successful deliveries completed</p>
