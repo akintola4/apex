@@ -16,7 +16,7 @@ const ReadOnlyStarRating = ({ rating }) => {
       {[...Array(5)].map((_, index) => (
         <span 
           key={index}
-          className={`text-orange-200  md:text-2xl ${index + 1 <= (hoveredRating || rating) ? 'filled' : ''}`}
+          className={`text-orange-200 text-xl  md:text-2xl ${index + 1 <= (hoveredRating || rating) ? 'filled' : ''}`}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
         >
