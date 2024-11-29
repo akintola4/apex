@@ -268,7 +268,7 @@ export default function Home() {
                         <p className="  text-primaryColor dark:text-gray-50 w-6/12 md:w-3/12 lg:w-2`/12 text-center text-sm border-primaryColor dark:border-DarkprimaryColor border p-2">FAQs</p>
                         <h4 className="  md:text-3xl font-bold dark:text-white xl:w-6/12  text-2xl">Got any question?
                             We’ve got answers</h4>
-                        <p className="  text-sm lg:w-10/12 xl:w-6/12 text-gray-400 dark:text-gray-300">Find answers to common questions about our services
+                        <p className="  text-sm lg:w-10/12 xl:w-6/12 text-gray-600 dark:text-gray-300">Find answers to common questions about our services
                             from tracking and delivery options to billing and support. </p>
                     </div>
 
