@@ -9,7 +9,7 @@ function ReviewCard({ review }) {
       <h4 className="  text-xs md:text-sm font-semibold dark:text-gray-50 text-gray-950">{review.time} days</h4>
       </div>
      
-      <p className="font-bold text-gray-500 text-sm dark:text-gray-100 md:text-md ">{review.description} </p>
+      <p className="font-bold text-gray-900 text-sm dark:text-gray-100 md:text-md ">{review.description} </p>
 
       <div className='flex flex-row items-center justify-between'>
         <div className='gap-4 flex items-center flex-rwo'>
