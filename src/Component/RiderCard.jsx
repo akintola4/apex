@@ -4,13 +4,13 @@ function RiderCard({ rider }) {
   return (
     <div className="flex flex-row gap-6">
       <div className='flex flex-col '>
-      <p className="font-bold  text-sm p-2 px-4  text-center bg-primaryColor dark:bg-DarkprimaryColor text-gray-50 rounded-full md:text-md ">{rider.id} </p>
+      <p className="md:font-bold font-normal  text-sm p-2 px-4  text-center bg-primaryColor dark:bg-DarkprimaryColor text-gray-50 rounded-full md:text-md ">{rider.id} </p>
       <span className='bg-transparent'></span>
       </div>
      
       <div className="flex flex-col w-full gap-2">
-        <h4 className="  text-xl font-semibold dark:text-gray-50 text-gray-950">{rider.title}</h4>
-        <p className="font-bold text-gray-500 text-sm dark:text-gray-100 md:text-md ">{rider.description} </p>
+        <h4 className="  text-md md:text-xl font-semibold dark:text-gray-50 text-gray-950">{rider.title}</h4>
+        <p className="font-bold text-gray-500 text-xs md:text-sm dark:text-gray-100 md:text-md ">{rider.description} </p>
 
       </div>
       </div>
