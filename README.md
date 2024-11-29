@@ -21,3 +21,4 @@ Designers
 - tailwind 
 - react router
 - Motion by framer
+- Aos
