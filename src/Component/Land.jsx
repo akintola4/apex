@@ -9,7 +9,7 @@ import RiderCard from "./RiderCard.jsx";
 import riderData from "./rider";
 
 //for the services us card type
-import ServiceCard from "./serviceCard.jsx";
+import ServiceCard from "./serviceCard";
 import servicesData from "./services";
 
 
