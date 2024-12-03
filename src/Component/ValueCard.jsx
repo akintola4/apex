@@ -8,7 +8,7 @@ function ValueCard({ info }) {
     >
       <img 
         src={`img/${info.img}`} 
-        className="p-4 bg-btn-base-light w-full xl:h-1/4 rounded-xl opacity-50 dark:opacity-100 dark:bg-btn-base-dark  xl:w-4/12" 
+        className="p-4 bg-btn-base-light w-2/12 md:w-3/12 lg:w-3/12 xl:h-1/4 rounded-xl opacity-50 dark:opacity-100 dark:bg-btn-base-dark  xl:w-4/12" 
         alt={info.title} 
       />
       <h4 className="text-lg text-gray-950 dark:text-white font-bold font-sans">
