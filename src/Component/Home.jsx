@@ -116,12 +116,12 @@ export default function Home() {
 
                     </div>
                     <div className="flex flex-col gap-6" data-aos="fade-left">
-                        <p className=" text-gray-950 text-md  dark:text-gray-300 ">At Apex Logistics, we are dedicated to redefining logistics
+                        <p className=" text-gray-950 font-light text-md  dark:text-gray-300 ">At Apex Logistics, we are dedicated to redefining logistics
                             solutions with efficiency, reliability, and innovation.
                             Specializing in end-to-end supply chain management, we
                             deliver a seamless experience with a global reach, serving
                             businesses of all sizes. </p>
-                        <p className=" text-gray-950 text-md  dark:text-gray-300 ">
+                        <p className=" text-gray-950 font-light text-md  dark:text-gray-300 ">
                             From real-time tracking to flexible delivery options, our
                             services are designed to keep pace with the
                             needs of a dynamic world. Our 24/7 support team
@@ -140,7 +140,7 @@ export default function Home() {
                 <div className="flex flex-col text-center gap-2">
                     {/* <p className="  mx-auto text-primaryColor dark:text-DarkprimaryColor text-sm border-primaryColor  dark:border-DarkprimaryColor border p-2">Core Partners</p> */}
                     <h4 className=" text-gray-950 md:text-3xl font-semibold dark:text-white  text-2xl">Delivery Cost Estimator</h4>
-                    <p className=" text-gray-500 mx-auto dark:text-gray-300">Get an instant delivery cost estimate by entering the details below</p>
+                    <p className=" text-gray-500 mx-auto font-light dark:text-gray-300">Get an instant delivery cost estimate by entering the details below</p>
                 </div>
 
                 <form className="flex flex-col gap-4 md:w-10/12  xl:w-6/12">
@@ -172,7 +172,7 @@ export default function Home() {
                         </div>
                         <label htmlFor="handling" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Do you need special handling?</label>
                     </div>
-                    <button name="quote form"  id='quote form' type="submit" className='px-3 py-2 w-full bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get Quotation</button>
+                    <button name="quote form"  id='quote form' type="submit" className='px-3 py-2 font-light w-full bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get Quotation</button>
                 </form>
 
             </section>
