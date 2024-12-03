@@ -60,12 +60,12 @@ export default function Home() {
             review={review}
         />
     ));
-    const fqaCard = fqaData.map(fqa => (
+   const fqaCard = fqaData.map(fqa => (
         <FqaCard
             key={fqa.id}
             fqa={fqa}
         />
-    ));
+    )); 
     const brandLogos = [
         "brand-logo-1.svg",
         "brand-logo-2.svg",
