@@ -9,7 +9,7 @@ import RiderCard from "./RiderCard.jsx";
 import riderData from "./rider";
 
 //for the services us card type
-import ServiceCard from "../assets/ServiceCard.jsx";
+import ServiceCard from "./ServiceCard.jsx";
 import servicesData from "./services";
 
 
@@ -106,7 +106,7 @@ export default function Home() {
                     {values}
                 </div>
             </section>
-            <section id="about" name="about" className=" flex flex-col lg:flex-row py-10 xl:gap-32 px-5 justify-between items-center  xl:mx-32" data-aos="zoom-in" >
+            <section id="about" name="about" className=" flex flex-col lg:flex-row py-10 gap-5 xl:gap-32 px-5 justify-between items-center  xl:mx-32" data-aos="zoom-in" >
                 <img src="img/hero-3.svg" className="xl:w-8/12 scale-100 md:scale-125 lg:scale-90 my-10 dark:invert-0" alt="" />
 
                 <div className="flex flex-col  xl:w-6/12 gap-6 md:gap-12 md:my-10">
@@ -116,12 +116,12 @@ export default function Home() {
 
                     </div>
                     <div className="flex flex-col gap-6" data-aos="fade-left">
-                        <p className=" text-gray-950 font-light text-md  dark:text-gray-300 ">At Apex Logistics, we are dedicated to redefining logistics
+                        <p className=" text-gray-900 font-light text-sm md:text-md  dark:text-gray-300 ">At Apex Logistics, we are dedicated to redefining logistics
                             solutions with efficiency, reliability, and innovation.
                             Specializing in end-to-end supply chain management, we
                             deliver a seamless experience with a global reach, serving
                             businesses of all sizes. </p>
-                        <p className=" text-gray-950 font-light text-md  dark:text-gray-300 ">
+                        <p className=" text-gray-900 font-light text-sm md:text-md  dark:text-gray-300 ">
                             From real-time tracking to flexible delivery options, our
                             services are designed to keep pace with the
                             needs of a dynamic world. Our 24/7 support team
@@ -136,7 +136,7 @@ export default function Home() {
 
 
             </section>
-            <section id="quote" name="quote" className="xl:mx-32 lg:mx-20 p-5 md:p-10 bg-[#E5E4F2] dark:bg-btn-base-dark rounded-xl flex flex-col gap-10 items-center" data-aos="fade-right">
+            <section id="quote" name="quote" className="xl:mx-32 lg:mx-20 mx-5 p-5 md:p-10 bg-[#E5E4F2] dark:bg-btn-base-dark rounded-xl flex flex-col gap-10 items-center" data-aos="fade-right">
                 <div className="flex flex-col text-center gap-2">
                     {/* <p className="  mx-auto text-primaryColor dark:text-DarkprimaryColor text-sm border-primaryColor  dark:border-DarkprimaryColor border p-2">Core Partners</p> */}
                     <h4 className=" text-gray-950 md:text-3xl font-semibold dark:text-white  text-2xl">Delivery Cost Estimator</h4>
@@ -187,7 +187,7 @@ export default function Home() {
                     <section
                         id='brand-logos'
                         className='brand-logos 
-      grid grid-cols-3 sm:grid-cols-5 md:grid-cols-4 lg:grid-cols-7
+      grid grid-cols-7 sm:grid-cols-5 md:grid-cols-4 lg:grid-cols-7
       justify-center items-center 
       gap-8 sm:gap-10 md:gap-12 px-5
       p-4 md:px-10 lg:px-20'
@@ -197,12 +197,7 @@ export default function Home() {
                                 key={index}
                                 src={`img/${logo}`}
                                 className='
-          w-full 
-          max-w-[100px] 
-          sm:max-w-[120px] 
-          md:max-w-none 
-          scale-125 sm:scale-100 
-          xl:w-auto'
+          scale-150 md:scale-100'
                                 alt={`brand-logo-${index + 1}`}
                             />
                         ))}

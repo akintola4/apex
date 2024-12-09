@@ -20,7 +20,7 @@ function Fqa({ fqa }) {
         </button>
       </div>
       {isOpen && (
-        <p className="font-bold text-gray-500 text-sm dark:text-gray-100 md:text-md delay-200 duration-300 ease-out">
+        <p className="font-light  text-gray-500 text-sm dark:text-gray-100 md:text-md delay-200 duration-300 ease-out">
           {fqa.description}
         </p>
       )}

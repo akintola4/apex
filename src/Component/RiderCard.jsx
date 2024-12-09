@@ -4,7 +4,7 @@ function RiderCard({ rider }) {
   return (
     <div className="flex flex-row gap-6">
       <div className='flex flex-col '>
-      <p className="md:font-bold font-normal  text-sm p-2 px-4  text-center bg-primaryColor dark:bg-DarkprimaryColor text-gray-50 rounded-full md:text-md ">{rider.id} </p>
+      <p className="md:font-bold font-normal  text-sm px-2.5  py-1  text-center bg-primaryColor dark:bg-DarkprimaryColor text-gray-50 rounded-full md:text-md ">{rider.id} </p>
       <span className='bg-transparent'></span>
       </div>
      

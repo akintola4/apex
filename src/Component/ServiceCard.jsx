@@ -5,7 +5,7 @@ function ServiceCard({ service }) {
     <div className="flex flex-col gap-4 bg-gray-50 dark:bg-gray-800 dark:border-transparent  border hover:shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] p-6 dark:hover:shadow-[rgba(247,240,_252,_0.1)_0px_0px_10px] rounded-lg">
 
       <div className='flex flex-col '>
-        <p className="font-bold w-1/12 text-sm p-2  text-center bg-primaryColor dark:bg-DarkprimaryColor text-gray-50 rounded-full md:text-md ">{service.id} </p>
+        <p className="font-bold w-1/12 text-sm px-2 py-1  text-center bg-primaryColor dark:bg-DarkprimaryColor text-gray-50 rounded-full md:text-md ">{service.id} </p>
         <span className='bg-transparent'></span>
       </div>
 
