@@ -76,7 +76,7 @@ export default function Nav() {
         className={`
            fixed inset-x-0 top-0 md:px-4 xl:px-10 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  z-10 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-none dark:bg-gray-950  dark:text-white   text-white w-12/12
             transition-transform duration-300 
-            ${isVisible ? 'md:translate-y-0' : 'md:-translate-y-full'}
+            ${isVisible ? 'translate-y-0' : '-translate-y-full'}
           `}
          >
 
