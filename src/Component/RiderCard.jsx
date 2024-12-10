@@ -9,8 +9,8 @@ function RiderCard({ rider }) {
       </div>
      
       <div className="flex flex-col w-full gap-2">
-        <h4 className="  text-md md:text-xl font-semibold dark:text-gray-50 text-gray-950">{rider.title}</h4>
-        <p className="font-bold text-gray-500 text-xs md:text-sm dark:text-gray-100 md:text-md ">{rider.description} </p>
+        <h4 className="  text-lg md:text-xl font-semibold dark:text-gray-50 text-gray-950">{rider.title}</h4>
+        <p className="font-light  text-gray-500 text-xs md:text-sm dark:text-gray-100 md:text-md ">{rider.description} </p>
 
       </div>
       </div>
