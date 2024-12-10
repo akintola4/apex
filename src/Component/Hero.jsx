@@ -26,7 +26,7 @@ export default function Hero() {
 
             </div>
         </div>
-        <div id="hero" className=" md:hidden block relative text-white bg-no-repeat bg-fixed h-screen z-0 overflow-hidden bg-[url('/img/hero-bg-mobile.svg')]" data-aos="zoom-in">
+        <div id="hero" className=" md:hidden block relative text-white bg-repeat  bg-fixed h-screen z-0 overflow-hidden bg-[url('/img/hero-bg-mobile.svg')]" data-aos="zoom-in">
         <div className="relative px-5 top-0 left-0 w-full h-full z-10 bg-black/50 flex items-center justify-center flex-col gap-5 ">
             <div className="flex flex-col gap-4 md:gap-4 items-start  md:items-center  md:text-center">
                 <h4 className="font-extrabold lg:text-6xl md:text-5xl text-2xl md:w-11/12 w-full xl:w-8/12 ">The Logistics Company you

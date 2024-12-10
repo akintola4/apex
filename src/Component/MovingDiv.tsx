@@ -20,7 +20,7 @@ interface MovingDivProps {
 
 const MovingDiv: React.FC<MovingDivProps> = ({ children }) => {
   return (
-    <div className='w-full inline-block overflow-hidden '>
+    <div className='w-full  inline-block overflow-hidden '>
   <motion.div
     className='overflow-hidden '
       variants={variants}

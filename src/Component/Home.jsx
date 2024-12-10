@@ -96,17 +96,17 @@ export default function Home() {
 
 
             </section>
-            <section id="values" name="values" className=" flex flex-col gap-10  dark:bg-gray-800 dark:text-white px-5 xl:px-10 items-center py-10" data-aos="fade-right">
-                <div className="flex flex-col text-center gap-2">
-                    <p className="  mx-auto text-primaryColor dark:text-DarkprimaryColor text-sm border-primaryColor  dark:border-DarkprimaryColor border p-2">Core Commmitments</p>
+            <section id="values" name="values" className=" flex flex-col gap-10  dark:bg-gray-800 dark:text-white px-5 xl:px-10 items-start md:items-center py-10" data-aos="fade-right">
+                <div className="flex flex-col md:text-center gap-4 md:gap-2">
+                    <p className="  text-primaryColor dark:text-DarkprimaryColor w-6/12 md:w-2/12 lg:w-6/12 text-center text-sm border-primaryColor dark:border-DarkprimaryColor border p-2">Core Commmitments</p>
                     <h4 className=" text-gray-950 md:text-3xl font-bold dark:text-white  text-2xl">Values that define us</h4>
-                    <p className=" text-gray-400 mx-auto dark:text-gray-300">Our values are the foundation of everything we do</p>
+                    <p className=" text-gray-400 text-sm md:text-md mx-auto dark:text-gray-300">Our values are the foundation of everything we do</p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 items-center justify-evenly gap-5 md:gap-10 xl:gap-20 xl:w-10/12 ">
                     {values}
                 </div>
             </section>
-            <section id="about" name="about" className=" flex flex-col lg:flex-row py-10 gap-5 xl:gap-32 px-5 justify-between items-center  xl:mx-32" data-aos="zoom-in" >
+            <section id="about" name="about" className=" flex  flex-col-reverse lg:flex-row py-10 gap-5 xl:gap-32 px-5 justify-between items-center  xl:mx-32" data-aos="zoom-in" >
                 <img src="img/hero-3.svg" className="xl:w-8/12 scale-100 md:scale-125 lg:scale-90 my-10 dark:invert-0" alt="" />
 
                 <div className="flex flex-col  xl:w-6/12 gap-6 md:gap-12 md:my-10">
@@ -129,7 +129,7 @@ export default function Home() {
                             destination safely and on time. </p>
                     </div>
 
-                    <button name="learn" id='learn' className='px-3 py-2 w-8/12 md:w-3/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg' data-aos="fade-left">See more</button>
+                    <button name="learn" id='learn' className='px-3 py-2 w-8/12 md:w-3/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-50 hover:border-black border-transparent  hover:text-black  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg' data-aos="fade-left">See more</button>
 
 
                 </div>
@@ -143,8 +143,8 @@ export default function Home() {
                     <p className=" text-gray-500 mx-auto font-light dark:text-gray-300">Get an instant delivery cost estimate by entering the details below</p>
                 </div>
 
-                <form className="flex flex-col gap-4 md:w-10/12  xl:w-6/12">
-                    <div className="flex flex-row w-full gap-10 items-center xl:gap-32">
+                <form className="flex flex-col gap-2 md:gap-4 md:w-10/12  xl:w-6/12">
+                    <div className="flex flex-row w-full gap-5 md:gap-10 items-center xl:gap-32">
                         <div className="flex w-6/12 flex-col">
                             <div className="mb-5 w-full">
                                 <label htmlFor="text" className="block mb-2 text-xs md:text-sm font-medium text-gray-900 dark:text-white">Enter pickup location</label>
@@ -172,7 +172,7 @@ export default function Home() {
                         </div>
                         <label htmlFor="handling" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Do you need special handling?</label>
                     </div>
-                    <button name="quote form"  id='quote form' type="submit" className='px-3 py-2 font-light w-full bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get Quotation</button>
+                    <button name="quote form"  id='quote form' type="submit" className='px-3 py-2 font-light w-full bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-50 hover:border-black border-transparent  hover:text-black  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get Quotation</button>
                 </form>
 
             </section>
@@ -189,6 +189,7 @@ export default function Home() {
                         className='brand-logos 
       grid grid-cols-7 sm:grid-cols-5 md:grid-cols-4 lg:grid-cols-7
       justify-center items-center 
+      scale-150 md:scale-110
       gap-8 sm:gap-10 md:gap-12 px-5
       p-4 md:px-10 lg:px-20'
                     >
@@ -232,7 +233,7 @@ export default function Home() {
                     <div className="flex flex-col xl:w-8/12 justify-between gap-10" data-aos="fade-right">
                         {rider}
                     </div>
-                    <button  name="join" id='Join' className='px-3 py-2 md:w-3/12 lg:w-8/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 border-transparent hover:border-primaryColor  hover:text-primaryColor  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Join team</button>
+                    <button  name="join" id='Join' className='px-3 py-2 md:w-3/12 lg:w-8/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 hover:border-black border-transparent  hover:text-black  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Join team</button>
 
 
                 </div>

@@ -9,8 +9,8 @@ function ServiceCard({ service }) {
         <span className='bg-transparent'></span>
       </div>
 
-      <h4 className="  text-xl font-semibold dark:text-gray-50 text-gray-950">{service.title}</h4>
-      <p className="font-bold text-gray-500 text-sm dark:text-gray-100 md:text-md ">{service.description} </p>
+      <h4 className=" text-lg md:text-xl font-semibold dark:text-gray-50 text-gray-950">{service.title}</h4>
+      <p className="font-light md:font-bold text-gray-500 text-sm dark:text-gray-100 md:text-md ">{service.description} </p>
 
 
     </div>

@@ -14,7 +14,7 @@ function ValueCard({ info }) {
       />
       </div>
       
-      <h4 className="text-lg text-gray-950 dark:text-white font-bold font-sans">
+      <h4 className="text-lg text-gray-900 dark:text-white font-semibold md:font-bold ">
         {info.title}
       </h4>
       <p className=" font-light text-gray-500 dark:text-white text-sm md:text-md">
