@@ -233,7 +233,7 @@ export default function Home() {
                     <div className="flex flex-col xl:w-8/12 justify-between gap-10" data-aos="fade-right">
                         {rider}
                     </div>
-                    <button  name="join" id='Join' className='px-3 py-2 md:w-3/12 lg:w-8/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-100 hover:border-black border-transparent  hover:text-black  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Join team</button>
+                    <button  name="join" id='Join' className='px-3 py-2 w-8/12 md:w-3/12 bg-primaryColor dark:bg-DarkprimaryColor hover:bg-gray-50 hover:border-black border-transparent  hover:text-black  dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-DarkprimaryColor border    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Join team</button>
 
 
                 </div>
