@@ -4,9 +4,9 @@ import ReadOnlyStarRating from './Star';
 function ReviewCard({ review }) {
   return (
     <div className="flex flex-col gap-4 bg-gray-50 dark:bg-gray-800 dark:border-transparent  border hover:shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] p-6 dark:hover:shadow-[rgba(247,240,_252,_0.1)_0px_0px_10px] rounded-lg">
-      <div className='flex flex-row justify-between'>
+      <div className='flex flex-row justify-between items-center'>
       <ReadOnlyStarRating rating={review.star}/>
-      <h4 className="  text-xs md:text-sm font-semibold dark:text-gray-50 text-gray-800">{review.time} days</h4>
+      <h4 className="  text-xs md:text-sm font-semibold dark:text-gray-50 text-gray-700">{review.time} days</h4>
       </div>
      
       <p className="font-light text-gray-900 text-sm dark:text-gray-100 md:text-md ">{review.description} </p>
