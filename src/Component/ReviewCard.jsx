@@ -15,8 +15,8 @@ function ReviewCard({ review }) {
         <div className='gap-4 flex items-center flex-rwo'>
         <img  src={`img/${review.img}`} className=" " alt="" />
         <div className='flex flex-col gap-1'>
-        <h4 className="  text-sm md:text-xl font-semibold dark:text-gray-50 text-gray-850">{review.name}</h4>
-        <h4 className="  text-xs font-normal md:font-semibold dark:text-gray-50 text-gray-800">{review.job}</h4>
+        <h4 className="  text-sm md:text-xl font-medium dark:text-gray-50 text-gray-800">{review.name}</h4>
+        <h4 className="  text-xs font-normal md:font-semibold dark:text-gray-50 text-gray-500">{review.job}</h4>
         </div>
         </div>
         <img src="img/quote.svg" className=' opacity-70 dark:invert' alt="" />
