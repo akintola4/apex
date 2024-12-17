@@ -1,25 +1,23 @@
 
-import {  FaFacebook, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
     return (
         <footer id="footer" name="footer" className="pt-10 w-full flex-end bottom-0  " >
             <div className="relative">
-                <div className="relative flex   flex-col gap-10  ">
-                    <div className="flex flex-col px-5 gap-10 xl:gap-32 xl:justify-between  lg:flex-row ">
+                <div className="relative flex   flex-col gap-5 md:gap-10  ">
+                    <div className="flex flex-col px-5 gap-5 md:gap-10 xl:gap-32 xl:justify-between  lg:flex-row ">
                         <div className="flex flex-col items-start justify-evenly  gap-6 lg:w-6/12  xl:w-4/12" >
                             <img src="/img/logo-purple.svg" className=" block dark:hidden " alt="" />
                             <img src="/img/logo-black.svg" className=" hidden dark:block invert" alt="" />
                             <p className="text-sm md:text-md  text-left">Join thousands of businesses and individuals who
                                 trust Apex for their logistics needs and experience
                                 the difference of efficient,dependable service.</p>
-                            <form className="w-full md:w-10/12 flex flex-col gap-2 ">
-                            <label className=" text-lg font-semibold xl:text-sm xl:font-medium text-gray-900 xl:ml-2">Subscribe to our newsletter</label>
-                                <div className="relative">
-                                    <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <form className="w-full flex flex-col justify-start gap-2 ">
+                                <label className=" text-lg font-semibold xl:text-sm xl:font-medium text-gray-900 xl:ml-2">Subscribe to our newsletter</label>
+                                    <div className="bg-gray-100 rounded-lg flex md:w-8/12 justify-between flex-row  md:gap-10 text-black p-2 px-4">
+                                        <input type="text" placeholder="Enter email address" className=" w-8/12  md:w-full text-sm text-gray-900 active:ring-purple-500 outline-none   bg-transparent focus:ring-purple-500 focus:border-purple-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" />
+                                        <button className="bg-btn-base-light text-white  dark:bg-btn-base-dark focus:ring-4 focus:outline-none focus:ring-purple-300 hover:bg-DarkprimaryColor font-medium rounded-lg text-sm px-6 py-2  dark:focus:ring-purple-800 ">Subscribe</button>
                                     </div>
-                                    <input type="search" id="search" className="block w-full p-4 xl:ps-10 text-sm text-gray-900 rounded-2xl border border-gray-300  bg-gray-50 focus:ring-purple-500 focus:border-purple-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" placeholder="Enter email address" />
-                                    <button type="submit" className=" absolute end-2.5 bottom-2.5 bg-btn-base-light text-white hover:bg-DarkprimaryColor  dark:bg-btn-base-dark focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-6 py-2  dark:focus:ring-purple-800">Subscribe</button>
-                                </div>
                             </form>
 
                         </div>

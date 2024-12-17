@@ -98,7 +98,7 @@ export default function Home() {
             </section>
             <section id="values" name="values" className=" flex flex-col gap-10  dark:bg-gray-800 dark:text-white px-5 xl:px-10 items-start md:items-center py-10" data-aos="fade-right">
                 <div className="flex flex-col md:text-center gap-4 md:gap-2">
-                    <p className="  text-primaryColor dark:text-DarkprimaryColor w-6/12 md:w-2/12 lg:w-6/12 text-center text-sm border-primaryColor dark:border-DarkprimaryColor border p-2">Core Commmitments</p>
+                    <p className="  text-primaryColor md:mx-auto dark:text-DarkprimaryColor w-6/12 md:w-2/12 lg:w-6/12 text-center text-sm border-primaryColor dark:border-DarkprimaryColor border p-2">Core Commmitments</p>
                     <h4 className=" text-gray-950 md:text-3xl font-bold dark:text-white  text-2xl">Values that define us</h4>
                     <p className=" text-gray-400 text-sm md:text-md mx-auto dark:text-gray-300">Our values are the foundation of everything we do</p>
                 </div>

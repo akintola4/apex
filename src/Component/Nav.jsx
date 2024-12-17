@@ -15,60 +15,60 @@ export default function Nav() {
         setIsOpen(!isOpen)
     }
 
-// for up and down scrolling not only hero section
-//     const [isVisible, setIsVisible] = useState(true);
-//   const [lastScrollY, setLastScrollY] = useState(0);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const heroHeight = window.innerHeight; // Assumes hero section is full viewport height
-//       const currentScrollY = window.scrollY;
-
-//       // Hide navbar after scrolling past hero section
-//       setIsVisible(currentScrollY < heroHeight);
-
-//       // Optional: Add smooth hide/show based on scroll direction
-//       if (currentScrollY > lastScrollY) {
-//         // Scrolling down
-//         setIsVisible(false);
-//       } else {
-//         // Scrolling up
-//         setIsVisible(true);
-//       }
-
-//       setLastScrollY(currentScrollY);
-//     };
-
-//     // Add scroll event listener
-//     window.addEventListener('scroll', handleScroll);
-
-//     // Cleanup listener
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, [lastScrollY]);
-
+//for up and down scrolling not only hero section
     const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-    useEffect(() => {
-      const handleScroll = () => {
-        const heroSection = document.getElementById('hero');
-        if (!heroSection) return;
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroHeight = window.innerHeight; // Assumes hero section is full viewport height
+      const currentScrollY = window.scrollY;
+
+      // Hide navbar after scrolling past hero section
+      setIsVisible(currentScrollY < heroHeight);
+
+      // Optional: Add smooth hide/show based on scroll direction
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setIsVisible(false);
+      } else {
+        // Scrolling up
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
+    // const [isVisible, setIsVisible] = useState(true);
+
+    // useEffect(() => {
+    //   const handleScroll = () => {
+    //     const heroSection = document.getElementById('hero');
+    //     if (!heroSection) return;
   
-        const heroBottom = heroSection.getBoundingClientRect().bottom;
+    //     const heroBottom = heroSection.getBoundingClientRect().bottom;
         
-        // Show navbar only when hero section is in view
-        setIsVisible(heroBottom > 0);
-      };
+    //     // Show navbar only when hero section is in view
+    //     setIsVisible(heroBottom > 0);
+    //   };
   
-      // Add scroll event listener
-      window.addEventListener('scroll', handleScroll);
+    //   // Add scroll event listener
+    //   window.addEventListener('scroll', handleScroll);
   
-      // Cleanup listener
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
+    //   // Cleanup listener
+    //   return () => {
+    //     window.removeEventListener('scroll', handleScroll);
+    //   };
+    // }, []);
   
 
     return (
