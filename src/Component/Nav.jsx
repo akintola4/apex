@@ -195,15 +195,14 @@ export default function Nav() {
                             FAQs
                         </Link></div>
                         <div className="px-5 py-2 transition duration-300 dark:text-white">
-                        <div className=" flex-row  gap-4 flex items-center ">
-
                        
+                        <div className=" flex-row pt-2 md:pt-none  gap-4 flex items-center ">
                         <button  name="get started" id='get started' className='px-4 py-2 bg-primaryColor hover:bg-DarkprimaryColor border border-transparent hover:border-primaryColor hover:text-btnbg-primaryColor dark:bg-btn-base-dark dark:text-gray-50 dark:hover:bg-gray-950 dark:hover:text-gray-50 dark:hover:border-btn-base-dark    transition ease-in-out  delay-150 duration-300 text-white rounded-lg'>Get started</button>
 
-                       
-                        <DarkSwitcher />
+{/*                        
+                        <DarkSwitcher /> */}
                     </div>
-                             </div>
+                    </div>
 
                 </div>
             </div>
